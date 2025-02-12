@@ -1,33 +1,30 @@
 #0 building with "mybuilder" instance using docker-container driver
 
 #1 [dionaea internal] load build definition from Dockerfile
-#1 transferring dockerfile: 3.51kB 0.0s done
+#1 transferring dockerfile: 3.51kB done
 #1 DONE 0.0s
 
-#2 [dionaea linux/amd64 internal] load metadata for docker.io/library/ubuntu:24.04
-#2 ...
+#2 [dionaea auth] library/ubuntu:pull token for registry-1.docker.io
+#2 DONE 0.0s
 
-#3 [dionaea auth] library/ubuntu:pull token for registry-1.docker.io
-#3 DONE 0.0s
+#3 [dionaea linux/amd64 internal] load metadata for docker.io/library/ubuntu:24.04
+#3 ...
 
 #4 [dionaea linux/arm64 internal] load metadata for docker.io/library/ubuntu:24.04
-#4 DONE 1.5s
-
-#2 [dionaea linux/amd64 internal] load metadata for docker.io/library/ubuntu:24.04
-#2 ...
+#4 DONE 1.6s
 
 #5 [dionaea internal] load .dockerignore
 #5 transferring context: 2B done
 #5 DONE 0.0s
 
-#2 [dionaea linux/amd64 internal] load metadata for docker.io/library/ubuntu:24.04
-#2 DONE 1.8s
+#3 [dionaea linux/amd64 internal] load metadata for docker.io/library/ubuntu:24.04
+#3 DONE 2.0s
 
-#6 [dionaea linux/amd64 1/3] FROM docker.io/library/ubuntu:24.04@sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782
+#6 [dionaea linux/arm64 1/3] FROM docker.io/library/ubuntu:24.04@sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782
 #6 resolve docker.io/library/ubuntu:24.04@sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782 0.0s done
 #6 DONE 0.0s
 
-#7 [dionaea linux/arm64 1/3] FROM docker.io/library/ubuntu:24.04@sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782
+#7 [dionaea linux/amd64 1/3] FROM docker.io/library/ubuntu:24.04@sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782
 #7 resolve docker.io/library/ubuntu:24.04@sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782 0.0s done
 #7 DONE 0.0s
 
@@ -51,11 +48,12 @@
 #13 exporting layers done
 #13 exporting manifest sha256:5fb99d5ceb2952dcde9588c0a938ba0c90ead05b3969c3cc5336cce2bacf51d3 done
 #13 exporting config sha256:5daade26348a75ada0a8e14fbc5ec1543ecbdf963400cdba4d8d461b8f15bf84 done
-#13 exporting attestation manifest sha256:62f18a761c05735bccb79b12fe64e1d2ddc996e3cc1942acc114327ed96d6643 0.0s done
+#13 exporting attestation manifest sha256:57825532d70c4ba8d7e08bc03b176760cd8ef28745b506dbe815f278f7111c46
+#13 exporting attestation manifest sha256:57825532d70c4ba8d7e08bc03b176760cd8ef28745b506dbe815f278f7111c46 0.0s done
 #13 exporting manifest sha256:073172976d0b0bd2c84b7260ea98ffc25d6d59a0a0f55a310f89edd5cec10424 done
 #13 exporting config sha256:3a49d4165a9d13d2161e33a4b0b225620894246ac9a50b7c77a39ab531f7ca2f done
-#13 exporting attestation manifest sha256:2f708374afa3a49e2e791cbd33e82e70b507f7a65a5e5645c465a7afdc758398 0.0s done
-#13 exporting manifest list sha256:d576cda66ca8b9b223d3dfbf8876e7ef27c5f796368d0a613b6ad54c940e1600 done
+#13 exporting attestation manifest sha256:7de07c25e20ec57a75052843c2b5a7a1574c4953543dc30bf7f9636537520709 0.0s done
+#13 exporting manifest list sha256:cfda5844b98fcb107edfb3842bdc194bb25397bc60449681f5bd9460b8fed2d8 0.0s done
 #13 pushing layers
 #13 ...
 
@@ -63,19 +61,20 @@
 #14 DONE 0.0s
 
 #13 [dionaea] exporting to image
-#13 pushing layers 5.9s done
-#13 pushing manifest for docker.io/f0rc3ps/dionaea:24.04.1@sha256:d576cda66ca8b9b223d3dfbf8876e7ef27c5f796368d0a613b6ad54c940e1600
-#13 pushing manifest for docker.io/f0rc3ps/dionaea:24.04.1@sha256:d576cda66ca8b9b223d3dfbf8876e7ef27c5f796368d0a613b6ad54c940e1600 4.2s done
+#13 pushing layers 6.5s done
+#13 pushing manifest for docker.io/f0rc3ps/dionaea:24.04.1@sha256:cfda5844b98fcb107edfb3842bdc194bb25397bc60449681f5bd9460b8fed2d8
+#13 pushing manifest for docker.io/f0rc3ps/dionaea:24.04.1@sha256:cfda5844b98fcb107edfb3842bdc194bb25397bc60449681f5bd9460b8fed2d8 5.6s done
+#13 pushing layers
 #13 ...
 
 #15 [dionaea auth] asc3t1c/dionaea:pull,push token for ghcr.io
 #15 DONE 0.0s
 
 #13 [dionaea] exporting to image
-#13 pushing layers 2.2s done
-#13 pushing manifest for ghcr.io/asc3t1c/dionaea:24.04.1@sha256:d576cda66ca8b9b223d3dfbf8876e7ef27c5f796368d0a613b6ad54c940e1600
-#13 pushing manifest for ghcr.io/asc3t1c/dionaea:24.04.1@sha256:d576cda66ca8b9b223d3dfbf8876e7ef27c5f796368d0a613b6ad54c940e1600 3.2s done
-#13 DONE 15.6s
+#13 pushing layers 3.8s done
+#13 pushing manifest for ghcr.io/asc3t1c/dionaea:24.04.1@sha256:cfda5844b98fcb107edfb3842bdc194bb25397bc60449681f5bd9460b8fed2d8
+#13 pushing manifest for ghcr.io/asc3t1c/dionaea:24.04.1@sha256:cfda5844b98fcb107edfb3842bdc194bb25397bc60449681f5bd9460b8fed2d8 1.9s done
+#13 DONE 17.9s
 
 #16 [dionaea] resolving provenance for metadata file
 #16 DONE 0.0s

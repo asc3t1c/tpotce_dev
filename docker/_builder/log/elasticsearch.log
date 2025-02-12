@@ -1,14 +1,14 @@
 #0 building with "mybuilder" instance using docker-container driver
 
 #1 [elasticsearch internal] load build definition from Dockerfile
-#1 transferring dockerfile: 1.85kB 0.0s done
+#1 transferring dockerfile: 1.85kB done
 #1 DONE 0.0s
 
-#2 [elasticsearch linux/amd64 internal] load metadata for docker.io/library/ubuntu:24.04
-#2 DONE 2.0s
+#2 [elasticsearch linux/arm64 internal] load metadata for docker.io/library/ubuntu:24.04
+#2 DONE 0.6s
 
-#3 [elasticsearch linux/arm64 internal] load metadata for docker.io/library/ubuntu:24.04
-#3 DONE 2.2s
+#3 [elasticsearch linux/amd64 internal] load metadata for docker.io/library/ubuntu:24.04
+#3 DONE 0.6s
 
 #4 [elasticsearch internal] load .dockerignore
 #4 transferring context: 2B done
@@ -19,12 +19,12 @@
 #5 DONE 0.0s
 
 #6 [elasticsearch internal] load build context
-#6 transferring context: 68B 0.0s done
+#6 transferring context: 68B done
 #6 DONE 0.0s
 
 #7 [elasticsearch linux/amd64 1/3] FROM docker.io/library/ubuntu:24.04@sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782
-#7 resolve docker.io/library/ubuntu:24.04@sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782 0.1s done
-#7 DONE 0.1s
+#7 resolve docker.io/library/ubuntu:24.04@sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782 0.0s done
+#7 DONE 0.0s
 
 #8 [elasticsearch linux/arm64 2/3] COPY dist/ /root/dist/
 #8 CACHED
@@ -40,13 +40,14 @@
 
 #12 [elasticsearch] exporting to image
 #12 exporting layers done
-#12 exporting manifest sha256:b6a35459a8d588974f4b3a0ebb757fec07da8f9515705e8de2a16a8ba839931e 0.0s done
+#12 exporting manifest sha256:b6a35459a8d588974f4b3a0ebb757fec07da8f9515705e8de2a16a8ba839931e done
 #12 exporting config sha256:0e16ff3f728c5fbc344acc3e2d5659cac962864a2ff259cd9d35c0012102c93f done
-#12 exporting attestation manifest sha256:2cc3a61f6820f49381a663c2cf5fa98c92e8672ae81f57179551992963afd613 0.0s done
-#12 exporting manifest sha256:7de23b9103f6d55fe797dabf2a9694d936de0be621ac818397e5e7aaff4b3d4c 0.0s done
-#12 exporting config sha256:f447b479df359398150d338b56562291b1d9a4dcc57bb3ffa1c1a2a0762e772a 0.0s done
-#12 exporting attestation manifest sha256:d29c3626cf2109e13a916db71b2f963d9cb82fa10d2748985fbb6aabb792fa43 0.0s done
-#12 exporting manifest list sha256:e38421ce83095f92e75863c8ffb7f156d387b5327f2fc4405d8eae2ea46cb138 0.0s done
+#12 exporting attestation manifest sha256:3a8855b72bc4bcb7ebbf2bb064fd669033d8d606d99acf5d105f8dcd44495ad5
+#12 exporting attestation manifest sha256:3a8855b72bc4bcb7ebbf2bb064fd669033d8d606d99acf5d105f8dcd44495ad5 0.0s done
+#12 exporting manifest sha256:7de23b9103f6d55fe797dabf2a9694d936de0be621ac818397e5e7aaff4b3d4c done
+#12 exporting config sha256:f447b479df359398150d338b56562291b1d9a4dcc57bb3ffa1c1a2a0762e772a done
+#12 exporting attestation manifest sha256:59aa84339a9fe4952e635fce66518fe266d7bb716bd1b6e36a43718b77dbc393 0.0s done
+#12 exporting manifest list sha256:5a59087e0ce9e1c2873d925da760e986492b8f16b47637a2c3de0180a6d7376b 0.0s done
 #12 pushing layers
 #12 ...
 
@@ -54,9 +55,9 @@
 #13 DONE 0.0s
 
 #12 [elasticsearch] exporting to image
-#12 pushing layers 4.9s done
-#12 pushing manifest for docker.io/f0rc3ps/elasticsearch:24.04.1@sha256:e38421ce83095f92e75863c8ffb7f156d387b5327f2fc4405d8eae2ea46cb138
-#12 pushing manifest for docker.io/f0rc3ps/elasticsearch:24.04.1@sha256:e38421ce83095f92e75863c8ffb7f156d387b5327f2fc4405d8eae2ea46cb138 5.5s done
+#12 pushing layers 4.0s done
+#12 pushing manifest for docker.io/f0rc3ps/elasticsearch:24.04.1@sha256:5a59087e0ce9e1c2873d925da760e986492b8f16b47637a2c3de0180a6d7376b
+#12 pushing manifest for docker.io/f0rc3ps/elasticsearch:24.04.1@sha256:5a59087e0ce9e1c2873d925da760e986492b8f16b47637a2c3de0180a6d7376b 7.3s done
 #12 pushing layers
 #12 ...
 
@@ -64,10 +65,10 @@
 #14 DONE 0.0s
 
 #12 [elasticsearch] exporting to image
-#12 pushing layers 2.1s done
-#12 pushing manifest for ghcr.io/asc3t1c/elasticsearch:24.04.1@sha256:e38421ce83095f92e75863c8ffb7f156d387b5327f2fc4405d8eae2ea46cb138
-#12 pushing manifest for ghcr.io/asc3t1c/elasticsearch:24.04.1@sha256:e38421ce83095f92e75863c8ffb7f156d387b5327f2fc4405d8eae2ea46cb138 3.5s done
-#12 DONE 16.2s
+#12 pushing layers 3.1s done
+#12 pushing manifest for ghcr.io/asc3t1c/elasticsearch:24.04.1@sha256:5a59087e0ce9e1c2873d925da760e986492b8f16b47637a2c3de0180a6d7376b
+#12 pushing manifest for ghcr.io/asc3t1c/elasticsearch:24.04.1@sha256:5a59087e0ce9e1c2873d925da760e986492b8f16b47637a2c3de0180a6d7376b 2.3s done
+#12 DONE 16.8s
 
 #15 [elasticsearch] resolving provenance for metadata file
 #15 DONE 0.0s

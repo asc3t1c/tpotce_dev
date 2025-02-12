@@ -5,67 +5,67 @@
 #1 WARN: FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 1)
 #1 DONE 0.0s
 
-#2 [redishoneypot linux/amd64 internal] load metadata for docker.io/library/golang:1.23-alpine
+#2 [redishoneypot linux/arm64 internal] load metadata for docker.io/library/alpine:3.20
 #2 ...
 
-#3 [redishoneypot linux/arm64 internal] load metadata for docker.io/library/alpine:3.20
-#3 DONE 0.2s
+#3 [redishoneypot linux/amd64 internal] load metadata for docker.io/library/alpine:3.20
+#3 DONE 0.5s
 
-#4 [redishoneypot linux/amd64 internal] load metadata for docker.io/library/alpine:3.20
-#4 DONE 0.2s
+#2 [redishoneypot linux/arm64 internal] load metadata for docker.io/library/alpine:3.20
+#2 DONE 0.5s
 
-#5 [redishoneypot linux/arm64 internal] load metadata for docker.io/library/golang:1.23-alpine
-#5 DONE 0.3s
+#4 [redishoneypot linux/arm64 internal] load metadata for docker.io/library/golang:1.23-alpine
+#4 DONE 0.7s
 
-#2 [redishoneypot linux/amd64 internal] load metadata for docker.io/library/golang:1.23-alpine
-#2 DONE 0.4s
+#5 [redishoneypot linux/amd64 internal] load metadata for docker.io/library/golang:1.23-alpine
+#5 DONE 0.7s
 
-#6 [redishoneypot internal] load .dockerignore
-#6 transferring context: 2B done
+#6 [redishoneypot linux/arm64 1/3] FROM docker.io/library/alpine:3.20@sha256:31687a2fdd021f85955bf2d0c2682e9c0949827560e1db546358ea094f740f12
+#6 resolve docker.io/library/alpine:3.20@sha256:31687a2fdd021f85955bf2d0c2682e9c0949827560e1db546358ea094f740f12 0.0s done
 #6 DONE 0.0s
 
-#7 [redishoneypot linux/amd64 stage-1 1/4] FROM docker.io/library/alpine:3.20@sha256:31687a2fdd021f85955bf2d0c2682e9c0949827560e1db546358ea094f740f12
+#7 [redishoneypot linux/amd64 1/3] FROM docker.io/library/alpine:3.20@sha256:31687a2fdd021f85955bf2d0c2682e9c0949827560e1db546358ea094f740f12
 #7 resolve docker.io/library/alpine:3.20@sha256:31687a2fdd021f85955bf2d0c2682e9c0949827560e1db546358ea094f740f12 0.0s done
-#7 DONE 0.1s
+#7 DONE 0.0s
 
-#8 [redishoneypot linux/amd64 builder 1/3] FROM docker.io/library/golang:1.23-alpine@sha256:2c49857f2295e89b23b28386e57e018a86620a8fede5003900f2d138ba9c4037
-#8 resolve docker.io/library/golang:1.23-alpine@sha256:2c49857f2295e89b23b28386e57e018a86620a8fede5003900f2d138ba9c4037 0.1s done
-#8 DONE 0.1s
+#8 [redishoneypot internal] load .dockerignore
+#8 transferring context: 2B 0.0s done
+#8 DONE 0.0s
 
 #9 [redishoneypot linux/arm64 builder 1/3] FROM docker.io/library/golang:1.23-alpine@sha256:2c49857f2295e89b23b28386e57e018a86620a8fede5003900f2d138ba9c4037
-#9 resolve docker.io/library/golang:1.23-alpine@sha256:2c49857f2295e89b23b28386e57e018a86620a8fede5003900f2d138ba9c4037 0.1s done
-#9 DONE 0.1s
+#9 resolve docker.io/library/golang:1.23-alpine@sha256:2c49857f2295e89b23b28386e57e018a86620a8fede5003900f2d138ba9c4037 0.0s done
+#9 DONE 0.0s
 
-#10 [redishoneypot linux/arm64 stage-1 1/4] FROM docker.io/library/alpine:3.20@sha256:31687a2fdd021f85955bf2d0c2682e9c0949827560e1db546358ea094f740f12
-#10 resolve docker.io/library/alpine:3.20@sha256:31687a2fdd021f85955bf2d0c2682e9c0949827560e1db546358ea094f740f12 0.1s done
-#10 DONE 0.1s
+#10 [redishoneypot linux/amd64 builder 1/3] FROM docker.io/library/golang:1.23-alpine@sha256:2c49857f2295e89b23b28386e57e018a86620a8fede5003900f2d138ba9c4037
+#10 resolve docker.io/library/golang:1.23-alpine@sha256:2c49857f2295e89b23b28386e57e018a86620a8fede5003900f2d138ba9c4037 0.0s done
+#10 DONE 0.0s
 
 #11 [redishoneypot internal] load build context
-#11 transferring context: 3.71kB 0.0s done
+#11 transferring context: 61B done
 #11 DONE 0.0s
 
-#12 [redishoneypot linux/amd64 builder 3/3] RUN apk --no-cache -U upgrade &&     apk --no-cache -U add 		build-base 		git 		go 		g++ &&     cd /root &&     export GOPATH=/opt/go/ &&     mkdir -p /opt/go &&     git clone https://github.com/cypwnpwnsocute/RedisHoneyPot &&     cd RedisHoneyPot &&     git checkout 45adc622a423d12d76392c3a54274f6cff111d58 &&     go mod download &&     go install
+#12 [redishoneypot linux/amd64 stage-1 2/4] COPY --from=builder /opt/go/bin/RedisHoneyPot /opt/redishoneypot/
 #12 CACHED
 
 #13 [redishoneypot linux/amd64 builder 2/3] COPY dist/ /root/dist/
 #13 CACHED
 
-#14 [redishoneypot linux/amd64 stage-1 3/4] COPY --from=builder /root/dist/redis.conf /opt/redishoneypot/
+#14 [redishoneypot linux/amd64 builder 3/3] RUN apk --no-cache -U upgrade &&     apk --no-cache -U add 		build-base 		git 		go 		g++ &&     cd /root &&     export GOPATH=/opt/go/ &&     mkdir -p /opt/go &&     git clone https://github.com/cypwnpwnsocute/RedisHoneyPot &&     cd RedisHoneyPot &&     git checkout 45adc622a423d12d76392c3a54274f6cff111d58 &&     go mod download &&     go install
 #14 CACHED
 
-#15 [redishoneypot linux/amd64 stage-1 2/4] COPY --from=builder /opt/go/bin/RedisHoneyPot /opt/redishoneypot/
+#15 [redishoneypot linux/amd64 stage-1 3/4] COPY --from=builder /root/dist/redis.conf /opt/redishoneypot/
 #15 CACHED
 
-#16 [redishoneypot linux/arm64 stage-1 3/4] COPY --from=builder /root/dist/redis.conf /opt/redishoneypot/
+#16 [redishoneypot linux/arm64 builder 3/3] RUN apk --no-cache -U upgrade &&     apk --no-cache -U add 		build-base 		git 		go 		g++ &&     cd /root &&     export GOPATH=/opt/go/ &&     mkdir -p /opt/go &&     git clone https://github.com/cypwnpwnsocute/RedisHoneyPot &&     cd RedisHoneyPot &&     git checkout 45adc622a423d12d76392c3a54274f6cff111d58 &&     go mod download &&     go install
 #16 CACHED
 
 #17 [redishoneypot linux/arm64 stage-1 2/4] COPY --from=builder /opt/go/bin/RedisHoneyPot /opt/redishoneypot/
 #17 CACHED
 
-#18 [redishoneypot linux/arm64 builder 3/3] RUN apk --no-cache -U upgrade &&     apk --no-cache -U add 		build-base 		git 		go 		g++ &&     cd /root &&     export GOPATH=/opt/go/ &&     mkdir -p /opt/go &&     git clone https://github.com/cypwnpwnsocute/RedisHoneyPot &&     cd RedisHoneyPot &&     git checkout 45adc622a423d12d76392c3a54274f6cff111d58 &&     go mod download &&     go install
+#18 [redishoneypot linux/arm64 builder 2/3] COPY dist/ /root/dist/
 #18 CACHED
 
-#19 [redishoneypot linux/arm64 builder 2/3] COPY dist/ /root/dist/
+#19 [redishoneypot linux/arm64 stage-1 3/4] COPY --from=builder /root/dist/redis.conf /opt/redishoneypot/
 #19 CACHED
 
 #20 [redishoneypot linux/amd64 stage-1 4/4] WORKDIR /opt/redishoneypot
@@ -78,11 +78,11 @@
 #22 exporting layers done
 #22 exporting manifest sha256:98b8cb70abee3ad87158d049765dcb0a550fd7b6b053b20954b4e26c9072d7cb done
 #22 exporting config sha256:ecc511e99ce5630fd640efb1fbeab8b4f0520ea3fc1fed6d5ad7d81243602fae done
-#22 exporting attestation manifest sha256:d26a68ebba6a7d1ad27e42e137bd707a55ed410a8b84a6077f43d39998473db6 0.0s done
+#22 exporting attestation manifest sha256:16fb6f94be52d923af71f677c50dbebc6ada5695233f0030c7deec3df2169ca5 0.0s done
 #22 exporting manifest sha256:5abf25079d1a0ffeca7f79f4baccecb85b04a076d8202aebd2a4c26e5539d244 done
 #22 exporting config sha256:3415258d6e83ede90c7bddb03b119cb2f08e5d3076f0e1264e232a7b09ff08d3 done
-#22 exporting attestation manifest sha256:af6944b8758deafa00e84848daafb64c9112611b15eef27139ce1e60f00aee51 0.0s done
-#22 exporting manifest list sha256:942706bcc80cffae5c286b6272d7957e177012cd321252482335151708c597c6 0.0s done
+#22 exporting attestation manifest sha256:0db8e0d145fa8995f260d99bb95639563362fb23a1b82cf76da1b88d2247d8a9 0.0s done
+#22 exporting manifest list sha256:95a39e93f3bdc6ef6f52dcab9231af03117cb3fa267b8a8b5d4e55d5feb4e530 0.0s done
 #22 pushing layers
 #22 ...
 
@@ -90,19 +90,19 @@
 #23 DONE 0.0s
 
 #22 [redishoneypot] exporting to image
-#22 pushing layers 2.9s done
-#22 pushing manifest for docker.io/f0rc3ps/redishoneypot:24.04.1@sha256:942706bcc80cffae5c286b6272d7957e177012cd321252482335151708c597c6
-#22 pushing manifest for docker.io/f0rc3ps/redishoneypot:24.04.1@sha256:942706bcc80cffae5c286b6272d7957e177012cd321252482335151708c597c6 2.2s done
+#22 pushing layers 7.1s done
+#22 pushing manifest for docker.io/f0rc3ps/redishoneypot:24.04.1@sha256:95a39e93f3bdc6ef6f52dcab9231af03117cb3fa267b8a8b5d4e55d5feb4e530
+#22 pushing manifest for docker.io/f0rc3ps/redishoneypot:24.04.1@sha256:95a39e93f3bdc6ef6f52dcab9231af03117cb3fa267b8a8b5d4e55d5feb4e530 4.2s done
 #22 ...
 
 #24 [redishoneypot auth] asc3t1c/redishoneypot:pull,push token for ghcr.io
 #24 DONE 0.0s
 
 #22 [redishoneypot] exporting to image
-#22 pushing layers 2.1s done
-#22 pushing manifest for ghcr.io/asc3t1c/redishoneypot:24.04.1@sha256:942706bcc80cffae5c286b6272d7957e177012cd321252482335151708c597c6
-#22 pushing manifest for ghcr.io/asc3t1c/redishoneypot:24.04.1@sha256:942706bcc80cffae5c286b6272d7957e177012cd321252482335151708c597c6 1.7s done
-#22 DONE 9.0s
+#22 pushing layers 2.6s done
+#22 pushing manifest for ghcr.io/asc3t1c/redishoneypot:24.04.1@sha256:95a39e93f3bdc6ef6f52dcab9231af03117cb3fa267b8a8b5d4e55d5feb4e530
+#22 pushing manifest for ghcr.io/asc3t1c/redishoneypot:24.04.1@sha256:95a39e93f3bdc6ef6f52dcab9231af03117cb3fa267b8a8b5d4e55d5feb4e530 1.8s done
+#22 DONE 15.7s
 
 #25 [redishoneypot] resolving provenance for metadata file
 #25 DONE 0.0s
