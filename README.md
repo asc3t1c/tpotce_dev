@@ -1,12 +1,52 @@
-# T-Pot - The All In One Multi Honeypot Platform
+# OPSEC-T-Pot - The All In One Multi Honeypot Platform
+***Included SOFTWARE:***
+- Ticket System
 
-Suppose you need support: For full support, automation, backup, and customization: `500$` every month, per server, or `$37000` every year with full support for 10 servers, it depends on the packet support! You can ask questions at: seccyboxopsec@gmail.com  The other choice is free, you can download install it, and try it personally, without any support! Kind Regards
+Suppose you need support: For full support, automation, backup, and customization: `500$` every month, per server, or `$37000` every year with full support for 10 servers, it depends on the packet support! You can ask questions at: seccyboxopsec@gmail.com  The other choice is free, you can download install it, and try it personally, without any support! 
+
+***IMPORTANT:*** Every `SINGLE` installation and configuration of OPSEC-T-pot from our team, is `$75` external service!
+
+------------------------------------------------------------------------------------------------------------------------
+### ORDER YOUR LIVE DEMO!
+```
+PREDICT CYBER ATTACKS AGAINST YOUR COMPANY!
+TAKE ACTION IN TIME!
+ORDER YOUR LIVE DEMO on seccyboxopsec@gmail.com!
+```
+
+* 1 - 2  days: `$5750`
+
+- - ***Include:***
+  - Demonstration of installation and coinfiguration.
+  - Demonstration of any kind of criminal cyber attacks!
+  - Explenation of all these attacks.
+  - Talking about IT defense in all aspects
+  - Questions.
+
+Kind Regards
+
+------------------------------------------------------------------------------------------------------------------------
+
+### SUPPORT and CONTRACTS for SUPPORT:
+
+```
+IMPORTANT! After signing a contract, a distribution copy will be locked only for the client, and public updates will be STOPPED!
+For the security and reliability of your company!
+Thank you
+```
 
 # NOTE:
 
 ***Click on the wallpaper to go into the demo video installation and buy it if you need help installing OPSEC-T-pot. The price is `$25`, thank you.***
 
 [![T-Pot](doc/tpotsocial.png)](https://www.patreon.com/posts/opsec-t-pot-how-121936310)
+
+
+### ATTACKING OPSEC-T-Pot - VIDEO DEMO:
+
+<a href="https://www.patreon.com/posts/opsec-t-pot-burp-122264600">Scanning and attack against OPSEC-T-Pot with </a><a href="https://portswigger.net/burp/releases#professional">Burp Suite</a>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 T-Pot is the all in one, optionally distributed, multiarch (amd64, arm64) honeypot plattform, supporting 20+ honeypots and countless visualization options using the Elastic Stack, animated live attack maps and lots of security tools to further improve the deception experience.
 <br><br>
@@ -116,6 +156,7 @@ T-Pot's main components have been moved into the `tpotinit` Docker image allowin
 
 ## Honeypots and Tools
 - T-Pot offers docker images for the following honeypots:<br>
+[peppermint](https://peppermint.sh/)
 [adbhoney](https://github.com/huuck/ADBHoney),
 [beelzebub](https://github.com/mariocandela/beelzebub),
 [ciscoasa](https://github.com/Cymmetria/ciscoasa_honeypot),
@@ -216,8 +257,8 @@ Depending on the [supported Linux distro images](#choose-your-distro), hive / se
 
 | T-Pot Type | RAM  | Storage   | Description                                                                                      |
 | :--------- | :--- | :-------- | :----------------------------------------------------------------------------------------------- |
-| Hive       | 16GB | 256GB SSD | As a rule of thumb, the more honeypots, sensors & data, the more RAM and storage is needed.      |
-| Sensor     | 8GB  | 128GB SSD | Since honeypot logs are persisted (~/tpotce/data) for 30 days, storage depends on attack volume. |
+| Hive       | 32GB | 512GB SSD | As a rule of thumb, the more honeypots, sensors & data, the more RAM and storage is needed.      |
+| Sensor     | 16GB  | 256GB SSD | Since honeypot logs are persisted (~/tpotce/data) for 30 days, storage depends on attack volume. |
 
 T-Pot does require ...
 - an IPv4 address via DHCP or statically assigned
